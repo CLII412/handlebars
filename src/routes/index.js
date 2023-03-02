@@ -3,7 +3,7 @@ const router = express.Router()
 
 router.get('/', function (req, res, next) {
   res.render('index', {
-    layout: 'second',
+    layout: 'layout',
     style: 'style.css',
   })
 })
@@ -23,20 +23,20 @@ router.get('/layout', function (req, res, next) {
 
 router.get('/body', function (req, res, next) {
   res.render('3-body', {
-    layout: 'second',
+    layout: 'layout',
     name: 'John',
   })
 })
 
 router.get('/component', function (req, res, next) {
   res.render('4-component', {
-    layout: 'second',
+    layout: 'layout',
   })
 })
 
 router.get('/params', function (req, res, next) {
   res.render('5-params', {
-    layout: 'second',
+    layout: 'layout',
     text: 'My first param',
   })
 })
