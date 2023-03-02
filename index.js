@@ -90,7 +90,6 @@ function onListening() {
     typeof addr === 'string'
       ? 'pipe ' + addr
       : 'port ' + addr.port
-  debug('Listening on ' + bind)
   console.log(
     'Listening on ' + 'http://localhost:' + addr.port,
   )
